@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <img [src]="catalogo.img" width="500">
+           
+        </div>
+        <div class="col">
+            <h2 class="">{{catalogo.nombre}} </h2>
+            <h5 class="mt-2">{{catalogo.precio}}</h5>
+
+
+            <p class="mt-5">{{catalogo.descripcion}}</p>
+            <a class="btn btn-outline-secondary mt-5 col-6" [routerLink]="['/catalogo']"  >Regresar</a>
+           
+        </div>
+       
+    </div>
+</div>

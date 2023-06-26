@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+footer{
+    color: black;
+    position: static;
+    width: 100%;
+    bottom: 0px;
+}
+
+
+.container{
+    padding-bottom: 50px;
+}

@@ -1,0 +1,31 @@
+<div class="container mt-5">
+<h2 class="text-center mb-5">Catálogo</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <!--*ngFor="let catalogo of catalogo; let i = index"-->
+
+  <!-- <app-catalogo-tarjeta [catalogo]="catalogo"  *ngFor="let catalogo of catalogo; let i = index"></app-catalogo-tarjeta>-->
+   <div class="col" *ngFor="let catalogo of catalogo; let i = index">
+    <div class="card">
+      <img [src]="catalogo.img" class="" alt="Hollywood Sign on The Hill"/>
+      <div class="card-body">
+        <h5 class="card-title">{{catalogo.nombre}}</h5>
+        <p class="card-text">
+          {{catalogo.precio}}
+        </p>
+       
+
+        <div class="d-grid gap-2">
+          <!--Para enviar parametros desde una pagina a otra mediante Router se utiliza el evento click que sera definido en catalogo.components.ts-->
+          <button (click)="verDetalle(i)"  type="button" class="btn btn-outline-secondary ">Ver mas</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     
+
+</div>
+
+
+</div>
